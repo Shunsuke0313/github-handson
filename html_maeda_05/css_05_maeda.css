@@ -1,0 +1,281 @@
+/* 文字化けしないためのコード。毎回書く必要あり */
+@charset "utf-8";
+
+/*========== All ==========*/
+html {
+    font-size: 62.5%;
+}
+body {
+    color: black;
+    font-family: "游ゴシック";
+    font-size: 1.6rem;
+}
+img {
+    max-width: 100%;
+    margin: auto;
+}
+.text-center {
+    text-align: center;
+}
+/*========== header ========== */
+.header {
+    background-color: white;
+    padding: 20px 40px;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.nav-list {
+    display: flex;
+}
+.nav-item {
+    margin: 0 0 0 40px;
+}
+.nav-item>a {
+    color: black;
+    text-decoration: none;
+}
+/*========== main ==========*/
+.main {
+    width:100%;
+    height:auto;
+    position: relative;
+}
+.main_img img {
+    box-sizing: border-box;
+}
+.main_title {
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:0;
+    margin:0;
+    font-size:40px;
+    color: white;
+    font-weight: bold;
+}
+.main_title_2{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:0;
+    margin:0;
+    font-size:30px;
+    color: white;
+    font-weight: normal;
+}
+/*========== about ==========*/
+.about { 
+    text-align: center;
+    padding: 20px 0;
+}
+.profile_title {
+    margin: 0 0 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: orange;
+}
+.profile_title_2 {
+    margin: 0 0 60px;
+}
+.profile_text {
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+.profile_text_2 {
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+.profile_text_3 {
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+.profile_text_4 {
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+.profile_img {
+    display: flex;
+}
+/*========== course ==========*/
+.course {
+    padding: 20px 0;
+    line-height: 1.5;
+}
+.course_title {
+    text-align: center;
+    margin: 0 0 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.course_title_2 {
+    text-align: center;
+    margin: 0 0 24px;
+}
+.course1 {
+    display:flex;
+}
+.course_img {
+    max-width: 100%;
+}
+.course1_content {
+    margin: 120px 50px;
+}
+.course1_title { 
+    margin: 0 0 24px;
+    font: size 2.4rem;
+    font-weight: bold;
+}
+.course1_text {
+    max-width: 100%;
+    line-height: 1.5;
+    text-align: left;
+}
+.course2 {
+    display:flex;
+}
+.course2_content {
+    margin: 120px 40px;
+}
+.course2_title {
+    margin: 0 0 24px;
+    font: size 2.4rem;
+    font-weight: bold;
+}
+.course2_text {
+    max-width: 100%;
+    line-height: 1.5;
+    text-align: left;
+}
+.course2_img {
+    position:absolute;
+    right:0;
+}
+/*========== News ==========*/
+.news {
+    padding: 40px 0;
+}
+.wrapper {
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+}
+.news_title {
+    margin: 0 0 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: orange;
+}
+.news_title_2 {
+    margin: 0 0 40px;
+}
+.news_list {
+    display: flex;
+    margin: 0 0 64px;   
+}
+.news_item {
+    width: 33.333%;
+}
+.news_img {
+    margin: 0 0 12px;  
+}
+.news_date {
+    margin: 0 0 24px;
+}
+.news_contents {
+    /* なぜかテキストが中央寄せにならない */
+    /* 画像幅に合わせたテキストの配置がわからない */
+    max-width: 300px;
+    line-height: 1.5;
+}
+.btn {
+    display: block;
+    width: 240px;
+    margin: auto;
+    padding: 15px 15px;
+    background-color: orange;
+    color: white;
+    font-size: 2.4rem;
+    text-decoration: none;
+}
+
+/*========== Access ==========*/
+.access {
+    text-align: center;
+    padding: 40px 0;
+}
+.access_title {
+    margin: 0 0 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.access_title_2 {
+    margin: 0 0 24px;
+    font-size: 1.8rem;
+}
+.access_table {
+    margin: auto;
+}
+/*========== contact ==========*/
+.contact {
+    padding: 40px 0 80px;
+}
+.form-wrapper {
+    width: 560px;
+    margin: auto;
+}
+.contact_title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 0 0 24px;
+}
+.contact_title_2 {
+    text-align: center;
+    margin: 0 0 50px;
+}
+.contact_text {
+    text-align: center;
+}
+.contact_text_1 {
+    line-height: 1.5;
+}
+.contact_text_2 {
+    line-height: 1.5;
+    padding: 20px 0 40px;
+}   
+.form-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 20px;
+}
+.form-title {
+    width: 132px;
+    margin: 0 0 40px 0;
+    padding: 8px 24px 0 0;
+    text-align: left;
+}
+.form-title.check-checkbox {
+    padding: 0;
+}
+.form-item {
+    width: 388px;
+    margin: 8px;
+    line-height: 1.5;
+}
+.form-parts {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: solid 1px gray;
+    font-size: 1.6rem;
+}
+.btn-submit {
+    border: none;
+}
+/*========== Footer ==========*/
